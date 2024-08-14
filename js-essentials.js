@@ -80,7 +80,7 @@ function finalCountDown(count) {
     return countdown;
 }
 
-finalCountDown(5);
+console.log(finalCountDown(10));
 
 // 7 - Funcion
 // getGrade(score)
@@ -93,20 +93,21 @@ finalCountDown(5);
 // 97-100 => S
 
 function getGrade(score) {
-    if (score >= 0 && score <= 40) {
-        return "D";
-    } else if (score >= 41 && score <= 60) {
-        return "R";
-    } else if (score >= 61 && score <= 74) {
-        return "B";
-    } else if (score >= 75 && score <= 84) {
-        return "BMB";
-    } else if (score >= 85 && score <= 96) {
-        return "MB";
-    } else if (score >= 97 && score <= 100) {
-        return "S";
-    } else {
-        return "Score no válido";
+    switch (score >= 0 && score <= 100) {
+        case (score >= 0 && score <= 40):
+            return 'D';
+        case (score >= 41 && score <= 60):
+            return 'R';
+        case (score >= 61 && score <= 74):
+            return 'B';
+        case (score >= 75 && score <= 84):
+            return 'BMB';
+        case (score >= 85 && score <= 96):
+            return 'MB';
+        case (score >= 97 && score <= 100):
+            return 'S';
+        default:
+            return 'Operacion no valida';
     }
 }
 
