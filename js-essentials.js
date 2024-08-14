@@ -80,8 +80,11 @@ function finalCountDown(count) {
     return countdown;
 }
 
+<<<<<<< HEAD
 console.log(finalCountDown(10));
 
+=======
+>>>>>>> 09048b41d36ee867f2dac20353b7d70c72b94813
 // 7 - Funcion
 // getGrade(score)
 // It should return the following grade according the score value.
