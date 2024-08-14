@@ -80,8 +80,6 @@ function finalCountDown(count) {
     return countdown;
 }
 
-finalCountDown(5);
-
 // 7 - Funcion
 // getGrade(score)
 // It should return the following grade according the score value.
